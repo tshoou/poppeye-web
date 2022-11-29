@@ -1,5 +1,6 @@
 import Home from "./pages/home";
 import { Routes, Route, HashRouter } from "react-router-dom";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <Routes>
           <Route>
             <Route path="/" element={<Home/>}/>
+            <Route path="/About" element={<About/>}/>
           </Route>
         </Routes>
       </HashRouter>

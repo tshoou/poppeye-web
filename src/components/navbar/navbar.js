@@ -1,18 +1,36 @@
 import React from "react"
 import { Link, NavLink } from "react-router-dom";
-
+import Logo from "../../assets/logoipsum-273 1.png";
 const Navbar = () => {
     return(
-        <nav>
+        <nav className="flex justify-evenly items-center pt-6 relative text-sm">
             <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `2xl:mr-7 lg:px-4 md:mr-2 xsm:mt-4 hover:text-customRed ${
-                isActive ? "text-customRed" : ""
-              }`
-            }
+            to="/About"
+            className="text-white"
           >
-            Beranda
+            ABOUT US
+          </NavLink>
+
+          <NavLink
+            to="/"
+            className="text-white"
+          >
+            PRODUCT
+          </NavLink>
+
+          <img src={Logo} className="w-20"/>
+          <NavLink
+            to="/"
+            className="text-white"
+          >
+            INSTAGRAM
+          </NavLink>
+
+          <NavLink
+            to="/"
+            className="text-white"
+          >
+            TIKTOK
           </NavLink>
         </nav>
     )
