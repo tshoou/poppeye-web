@@ -12,7 +12,7 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
-            to="/"
+            to="/Product"
             className="text-white"
           >
             PRODUCT
