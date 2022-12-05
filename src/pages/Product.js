@@ -4,6 +4,8 @@ import Footer from "../components/Footer/Footer"
 import Product2 from "../assets/Product2.png"
 import picProduct1 from "../assets/picProduct1.png"
 import ourProduct1 from "../assets/fi-rs-leaf.png"
+import { motion } from "framer-motion"
+
 const Product = () => {
     return(
         <>

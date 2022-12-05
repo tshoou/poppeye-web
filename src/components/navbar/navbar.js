@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/logoipsum-273 1.png";
 const Navbar = () => {
     return(
-        <nav className="flex justify-evenly items-center pt-6 relative text-sm">
+        <nav className="hidden sm:flex justify-evenly items-center pt-6 relative text-sm">
             <NavLink
             to="/About"
             className="text-white"

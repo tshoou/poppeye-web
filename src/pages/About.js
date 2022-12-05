@@ -8,6 +8,7 @@ import shopee from "../assets/shopee.png"
 import tokopedia from "../assets/tokopedia.png"
 import amazon from "../assets/amazon.png"
 import blibli from "../assets/blibli.png"
+import { motion } from "framer-motion"
 
 const About = () => {
     return(
