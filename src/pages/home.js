@@ -53,7 +53,7 @@ const Home = () => {
             </div>
             
             <div className="flex flex-wrap items-center justify-evenly my-24 mx-auto sm:flex-row" id="product">
-                <img src={Product} className="w-[50vh] lg:w-[70vh]"/>
+                <img src={Product} className="max-w-sm lg:max-w-[70vh]"/>
                 <Card
                     title="Popeye Energy Drink"
                     description="Popeye Soft Drinks is produced by Popeye, the only company that produces vegetarian soft drinks"
@@ -68,7 +68,7 @@ const Home = () => {
                     description="We were founded in 2022 by TWMS with the vision to create a product aimed at helping vegetarians consume products that are definitely for them."
                     textButton="MORE"
                 />
-                <img src={Company} className="w-[50vh] lg:w-[70vh]"/>
+                <img src={Company} className="max-w-sm lg:max-w-[70vh]"/>
             </div>
 
 
@@ -85,9 +85,9 @@ const Home = () => {
                 </h1>
             </div>
 
-            <div className="flex flex-wrap flex-col md:flex-row my-24 mx-24">
+            <div className="flex flex-wrap flex-col md:flex-row mx-12 my-16 md:my-24 md:mx-24 ">
                 <div className="w-full md:w-1/2 md:pl-12 pl-0">
-                    <h1 className="text-Primary text-2xl md:text-5xl">
+                    <h1 className="text-Primary text-3xl md:text-5xl text-center md:text-left">
                     Frequently asked questions
                     </h1>
                 </div>
