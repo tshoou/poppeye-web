@@ -53,6 +53,7 @@ const Home = () => {
                     title="Popeye Energy Drink"
                     description="Popeye Soft Drinks is produced by Popeye, the only company that produces vegetarian soft drinks"
                     textButton="MORE"
+                    link="product"
                 />
             </motion.div>
 
@@ -65,6 +66,7 @@ const Home = () => {
                     title="PED Company"
                     description="We were founded in 2022 by TWMS with the vision to create a product aimed at helping vegetarians consume products that are definitely for them."
                     textButton="MORE"
+                    link="About"
                 />
                 <img src={Company} className="max-w-sm lg:max-w-[70vh]"/>
             </motion.div>
@@ -80,7 +82,7 @@ const Home = () => {
                 
             }}
             className="h-[10vh] md:h-[30vh] mx-8 md:mx-24 bg-white items-center flex justify-between drop-shadow-xl rounded-[50px] shadow-2xl">
-                <img src={leftPattern} className="h-[10vh] md:h-[30vh] rounded-bl-[50px]"/>
+                <img src={leftPattern} className="h-[10vh] md:h-[30vh] rounded-l-[50px]"/>
                 <img src={rightPattern} className="w-auto h-[10vh] md:h-[30vh]"/>
                 <h1 className="text-xl md:text-5xl z-50 absolute ml-16 align-middle text-Primary">ORGANIC 
                         <span className="text-black">
