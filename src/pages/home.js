@@ -18,22 +18,14 @@ const Home = () => {
                 <div className="h-[100vh] md:h-3/4 flex items-center">
                     <div className="flex flex-col w-full text-center">
                         <div className="bg-white w-full py-6 flex flex-col items-center">
-                            <h2 className="py-4 text-lg md:text-xl text-slate-500">DISCOVER THE TASTE OF FRESH ENERGY DRINK WITH</h2>
+                            <motion.h2 
+                             initial={{x:-200, opacity:0}}
+                             animate={{opacity:1,x:0, transition:{type:"spring", duration:2.0}}}
+                            
+                            className="py-4 text-lg md:text-xl text-slate-500">DISCOVER THE TASTE OF FRESH ENERGY DRINK WITH</motion.h2>
                             <motion.h1 
-                            initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{
-                              default: {
-                                duration: 0.6,
-                                ease: [0, 0.71, 0.2, 1.01]
-                              },
-                              scale: {
-                                type: "spring",
-                                damping: 5,
-                                stiffness: 100,
-                                restDelta: 0.001
-                              }
-                            }}
+                            initial={{x:200, opacity:0}}
+                            animate={{opacity:1,x:0, transition:{type:"spring", duration:2.0}}}
                             className="text-3xl md:text-5xl">POPEYE ENERGY DRINK
                             
                             </motion.h1>
@@ -42,26 +34,32 @@ const Home = () => {
                     </div>          
                 </div>
                 <div className="flex justify-end items-end">
-                <AnchorLink href='#product'>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12 text-white m-4 sm:hidden">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </button>
-                </AnchorLink>
+                    <AnchorLink href='#product'>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12 text-white m-4 sm:hidden">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
+                    </AnchorLink>
                 </div>
             </div>
             
-            <div className="flex flex-wrap items-center justify-evenly my-24 mx-auto sm:flex-row" id="product">
+            <motion.div 
+            initial={{y:-100, opacity:0}}
+            whileInView={{opacity:1,y:0, transition:{type:"spring", duration:3.0}}}
+            className="flex flex-wrap items-center justify-evenly my-24 mx-auto sm:flex-row" id="product">
                 <img src={Product} className="max-w-sm lg:max-w-[70vh]"/>
                 <Card
                     title="Popeye Energy Drink"
                     description="Popeye Soft Drinks is produced by Popeye, the only company that produces vegetarian soft drinks"
                     textButton="MORE"
                 />
-            </div>
+            </motion.div>
 
-            <div className="flex flex-wrap items-center justify-evenly my-24 mx-auto sm:flex-row">
+            <motion.div 
+            initial={{y:-100, opacity:0}}
+            whileInView={{opacity:1,y:0, transition:{type:"spring", duration:3.0}}}
+            className="flex flex-wrap items-center justify-evenly my-24 mx-auto sm:flex-row">
                 
                 <Card
                     title="PED Company"
@@ -69,10 +67,19 @@ const Home = () => {
                     textButton="MORE"
                 />
                 <img src={Company} className="max-w-sm lg:max-w-[70vh]"/>
-            </div>
+            </motion.div>
 
 
-            <div className="h-[10vh] md:h-[30vh] mx-8 md:mx-24 bg-white items-center flex justify-between drop-shadow-xl rounded-[50px] shadow-2xl">
+            <motion.div 
+            initial={{
+                scale:0.7,
+            }}
+            whileInView={{
+                scale:1,
+                transition:{duration:  1.0},
+                
+            }}
+            className="h-[10vh] md:h-[30vh] mx-8 md:mx-24 bg-white items-center flex justify-between drop-shadow-xl rounded-[50px] shadow-2xl">
                 <img src={leftPattern} className="h-[10vh] md:h-[30vh] rounded-bl-[50px]"/>
                 <img src={rightPattern} className="w-auto h-[10vh] md:h-[30vh]"/>
                 <h1 className="text-xl md:text-5xl z-50 absolute ml-16 align-middle text-Primary">ORGANIC 
@@ -83,9 +90,12 @@ const Home = () => {
                             ENERGIZED
                         </span>
                 </h1>
-            </div>
+            </motion.div>
 
-            <div className="flex flex-wrap flex-col md:flex-row mx-12 my-16 md:my-24 md:mx-24 ">
+            <motion.div 
+            initial={{y:-100, opacity:0}}
+            whileInView={{opacity:1,y:0, transition:{type:"spring", duration:3.0}}}
+            className="flex flex-wrap flex-col md:flex-row mx-12 my-16 md:my-24 md:mx-24 ">
                 <div className="w-full md:w-1/2 md:pl-12 pl-0">
                     <h1 className="text-Primary text-3xl md:text-5xl text-center md:text-left">
                     Frequently asked questions
@@ -220,7 +230,7 @@ const Home = () => {
                         </div>
                     </div>       
                 </div>             
-            </div>
+            </motion.div>
             <Footer/>
         </>
         
