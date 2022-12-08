@@ -82,10 +82,10 @@ const Navbar = () => {
               </Link> 
                 
 							</li>
-							<li>
-                <a href="/https://www.instagram.com/tfshoou/"
+							
+                <a href="https://www.instagram.com/tfshoou/"
                   target="_blank"
-                  rel=" noreferrer"
+                  rel="noreferrer"
                   className={`${
 										location === ""
 											? "text-white text-sm font-light"
@@ -94,9 +94,7 @@ const Navbar = () => {
                 >
                   INSTAGRAM
                 </a>
-              </li>
-              <li>
-              <a href="/https://www.tiktok.com/"
+              <a href="https://www.tiktok.com/"
                   target="_blank"
                   rel=" noreferrer"
                   className={`${
@@ -106,8 +104,7 @@ const Navbar = () => {
 									} font-semibold`}
                 >
                   TIKTOK
-                </a>
-							</li>
+                  </a>
 						</ul>
           </div>
 						
@@ -158,8 +155,7 @@ const Navbar = () => {
               {/* <li>
                 <img src={Logo} className="w-20 animate-spin-slow"/>
               </li> */}
-              <li className="my-6">
-                <a href="/https://www.tiktok.com/"
+                <a href="https://www.tiktok.com/"
                     target="_blank"
                     rel=" noreferrer"
                     className={`${
@@ -170,9 +166,7 @@ const Navbar = () => {
                   >
                     INSTAGRAM
                   </a>
-              </li>
-              <li className="my-6">
-                <a href="/https://www.tiktok.com/"
+                <a href="https://www.tiktok.com/"
                     target="_blank"
                     rel=" noreferrer"
                     className={`${
@@ -182,8 +176,7 @@ const Navbar = () => {
                     } font-semibold`}
                   >
                     TIKTOK
-                  </a>
-              </li>
+                </a>
             </ul>
 						
 					</div>
