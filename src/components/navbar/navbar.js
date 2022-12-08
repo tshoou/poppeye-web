@@ -118,6 +118,16 @@ const Navbar = () => {
 					<div className="flex  mt-3 px-2 gap-y-3 md:hidden text-lg bg-Primary">
             <ul className="list-none flex flex-col items-center justify-center mx-auto">
               <li className="my-6">  
+              <NavLink
+                    to="/"
+                    className={`${
+                      location === ""
+                        ? "text-white text-sm font-light border-teal-50"
+                        : "text-white text-sm font-light"
+                    }  font-semibold`}
+                  >
+                    Home
+                </NavLink>
                 <NavLink
                     to="/About"
                     className={`${
