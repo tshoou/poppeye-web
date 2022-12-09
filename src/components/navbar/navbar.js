@@ -32,7 +32,14 @@ const Navbar = () => {
 		>
 				<div className="">
 					<nav className="p-0" id="nav-menu">
-            <div className="flex justify-end items-center mx-10 md:hidden">
+            <div className="flex justify-between items-center mx-10 md:hidden">
+              <Link
+                smooth
+                to="/"
+                className="text-2xl text-white font-normal md:hidden block"
+              >
+                <img src={Logo} className="w-20 animate-spin-slow"/>
+              </Link> 
               {/* <Link
                 smooth
                 to="#"
@@ -114,6 +121,7 @@ const Navbar = () => {
 				{isOpen && (
 					<div className="flex  mt-3 px-2 gap-y-3 md:hidden text-lg bg-Primary">
             <ul className="list-none flex flex-col items-center justify-center mx-auto">
+            
             <li className="my-6">  
               
               <NavLink
@@ -160,7 +168,7 @@ const Navbar = () => {
                     rel=" noreferrer"
                     className={`${
                       location === ""
-                        ? "text-white text-sm font-light"
+                        ? "text-white text-sm font-light my-6"
                         : "text-white text-sm font-light"
                     } font-semibold`}
                   >
@@ -171,7 +179,7 @@ const Navbar = () => {
                     rel=" noreferrer"
                     className={`${
                       location === ""
-                        ? "text-white text-sm font-light"
+                        ? "text-white text-sm font-light my-6"
                         : "text-white text-sm font-light"
                     } font-semibold`}
                   >
